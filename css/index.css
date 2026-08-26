@@ -1915,6 +1915,177 @@ box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, .3);
     text-indent: 0;
 }
 
+/* --- 第三届农业无人机遥感创新论坛专题 --- */
+.forum-brief {
+    border-top: 4px solid #1560e2;
+}
+
+.forum-hero-figure {
+    margin-top: 4px;
+}
+
+.forum-hero-figure img {
+    width: min(960px, 100%);
+    border: 1px solid #dbe7f5;
+    box-shadow: 0 10px 28px rgba(21, 96, 226, 0.12);
+}
+
+.forum-facts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin: 24px 0 30px;
+}
+
+.forum-facts div {
+    padding: 16px 10px 14px;
+    background: #f7fbff;
+    border: 1px solid #e1ecf9;
+    text-align: center;
+}
+
+.forum-facts strong {
+    display: block;
+    color: #1560e2;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.forum-facts span {
+    display: block;
+    margin-top: 4px;
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.forum-highlight {
+    margin: 18px 0 28px;
+    padding: 18px 22px 8px;
+    background: #f8fbff;
+    border-left: 4px solid #6ea6ef;
+}
+
+.forum-highlight p {
+    text-indent: 0;
+}
+
+.forum-report-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 18px 0 30px;
+}
+
+.forum-report-card {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e5eaf1;
+    box-shadow: 0 4px 14px rgba(17, 24, 39, 0.05);
+}
+
+.forum-speaker-photo {
+    margin: 0;
+}
+
+.forum-speaker-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid #dbe3ee;
+    background: #eef3f8;
+}
+
+.forum-speaker-photo figcaption {
+    margin-top: 6px;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.forum-report-card h4 {
+    margin: 4px 0 8px;
+    color: #1f2937;
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+.forum-report-card p {
+    margin: 0;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.75;
+    text-indent: 0;
+}
+
+.forum-role {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #eef6ff;
+    color: #1560e2;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.featured-report {
+    border-color: #cfe0fb;
+    border-top: 3px solid #1560e2;
+}
+
+.forum-alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+    margin: 18px 0 30px;
+}
+
+.forum-alumni-grid article {
+    padding: 10px 10px 12px;
+    background: #fafafa;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.forum-alumni-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin-bottom: 9px;
+    border: 1px solid #dbe3ee;
+}
+
+.forum-alumni-grid strong,
+.forum-alumni-grid span {
+    display: block;
+}
+
+.forum-alumni-grid strong {
+    color: #1f2937;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.forum-alumni-grid span {
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.brief-note code {
+    padding: 1px 5px;
+    background: #eef2f7;
+    color: #334155;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
 @media screen and (max-width: 768px) {
     .part, .part2 {
         width: 100%;
@@ -1952,5 +2123,40 @@ box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, .3);
 
     .brief-profile, .brief-profile.compact, .recruit-grid {
         grid-template-columns: 1fr;
+    }
+
+    .forum-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .forum-report-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .forum-report-card {
+        grid-template-columns: 132px minmax(0, 1fr);
+        gap: 14px;
+        padding: 13px;
+    }
+
+    .forum-alumni-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .forum-report-card {
+        grid-template-columns: 1fr;
+    }
+
+    .forum-speaker-photo {
+        width: min(220px, 100%);
+        margin: 0 auto;
+    }
+
+    .forum-report-card h4,
+    .forum-report-card p,
+    .forum-role {
+        text-align: center;
     }
 }
